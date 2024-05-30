@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/css/SignIn.css">
+    <title>New Form</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--sign in-->
+        <section id="sign-in">
+<h1>Sign in</h1>
+<p>Sign in to Continue</p>
+        </section>
+        <!--sign in End-->
+
+ <section id="forms">
+<form method="post" action="signIn.php">
+<div id="first">
+<input type="text" name="email" id="email">
+<label for="email">Email or Phone Number</label>
+</div> 
+
+<div id="second">
+<input type="text" name="password" id="password" >
+<label for="password">Password</label>
+</div> 
+
+<div id="forget">
+    <a href="index.html">      
+        <button>Forget Password?</button>
+  </a>
+</div>
+
+<div id="login">
+    <a href="index.html">      
+        <button type="submit" onclick="checkLogin()">Login</button>
+  </a>
+</div>
+
+</form>
+
+</section>
+
+
+<footer>
+    <h2>
+        Don't have any account ?
+    </h2>
+    <div id="new-account">
+        <a href="../resources/views/signUp.html">      
+              <button>
+                Create <span>Account</span>
+              </button>
+        </a>
+    </div>
+</footer>
+
+<script src="signIn.js">
+
+</script>
+
+</div>
+</body>
+</html>

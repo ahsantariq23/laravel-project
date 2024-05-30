@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding-top: 100px;
+}
+  nav{
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}  
+#nav-logo {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#nav-logo img {
+    color: red;
+    width: 190px;
+    
+    /* border: 1px solid red; */
+} 
+#nav-container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+}
+#nav-container ul li{
+    padding-right: 2rem;
+}
+#nav-container ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+#nav-container a{
+    text-decoration: none;
+    color: rgb(1,1,1,0.8);
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+#nav-container a:hover{
+    padding: 9px;
+     background-color:rgb(1,1,1,0.1);
+     transition: 200ms;
+     border-radius: 7px;
+     
+}
+
+
+#move-num p{
+    padding: 3px;
+    background-color: white;
+    position: relative;
+    right: 5rem;
+}
+/* Section under the nav bar code */
+#section-2-wrap{
+    position: relative;
+}
+#cover-container img{
+width: 100%;
+height: 450px;
+object-fit: cover;
+z-index: 1;
+}
+#cover-text{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 10%;
+    color: rgb(169,169,169); 
+    
+}
+#cover-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  /* Services Card */
+
+.service-heading{
+    text-align: center;
+    color: rgb(169,169,169);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.service-heading p{
+    font-weight: bold;
+}
+.service-card img{
+  width: 400px;
+  height: 365px;
+  object-fit: cover;
+}
+.service-card {
+    position: relative;
+  }
+
+.service-text{
+   position: absolute;
+   bottom: 2rem;
+   left: 3%;
+   color: white;
+}
+.service-text h1{
+    padding-bottom: 1rem;
+}
+
+#services-main-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+  
+  .service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 365px;
+    background-color: rgba(0, 0, 0, 0.4);  
+    pointer-events: none;
+  }
+  .service-card:hover {
+    transform: scale(1.05); 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+  
+
+/* Strip code starts here */
+.price-strip{
+    margin-top: 4rem;
+    background-color: rgb(169, 169, 169,0.3);
+    margin-bottom: 3rem;
+
+
+}
+.strip-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(169,169,169);
+    margin-bottom: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.strip-heading p{
+    font-size: 16px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+
+}
+
+.strip-heading h1{
+    font-size: 20px;
+    
+}
+.strip-heading{
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    display: flex;
+    gap: 3rem;
+}
+.strip-cart{
+    flex-wrap: wrap;
+    padding-right:1rem ;
+    display: flex;
+    gap: 1rem;
+}
+.strip-cart input{
+    width: 55px;
+    height: 48px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.strip-cart button{
+    background: none;
+    border: none;
+    height: 46px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Delivery starts */
+
+#delivery-wrap {
+    margin-top: 6rem;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#delivery-wrap img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px;
+}
+
+#delivery-text {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff; 
+}
+
+#delivery-text h1 {
+    font-size: 2.5rem; 
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 1.5rem; 
+}
+
+#delivery-text span {
+    color: #6c757d; 
+}
+
+#delivery-text p {
+    color: #555555; 
+    font-weight: 500;
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    margin-top: 1.5rem; 
+}
+
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #ccc;
+}
+
+.footer-section iframe {
+    width: 100%;
+    max-width: 300px; /* Adjust maximum width of iframe */
+    height: 200px; /* Adjust height of iframe */
+    border: none; /* Remove iframe border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+
+#sign-out input{
+    cursor: pointer;
+    color: black;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    border: 2px solid rgb(0, 0,0,0.1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+  /* 1083
+  68
+   */
+   @media only screen and (max-width: 840px) {
+    
+   .strip-wrap{
+    justify-content: center;
+    gap: 1rem;
+   }
+   
+}
+
+@media (max-width: 768px) {
+    #delivery-wrap {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #delivery-text,
+    #delivery-wrap img {
+        width: 100%;
+        max-width: none;
+    }
+
+    #delivery-text {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+}
